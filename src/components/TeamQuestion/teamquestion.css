@@ -202,7 +202,7 @@
 
 @media only screen and (max-width:1020px) {
     .question {
-        margin-left: 20px;
+        margin-left: -8px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -260,7 +260,6 @@
         margin-top: 60px;
         width: 500px;
     }
-
     .joinwhatsappbtn {
         padding-block: 10px;
         padding-inline: 20px;
@@ -405,6 +404,7 @@
     }
 
     .question .accordian {
+        margin-top: 35px;
         width: 300px;
     }
 

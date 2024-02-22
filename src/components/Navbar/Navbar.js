@@ -17,7 +17,7 @@ export default function Navbar({ mode }) {
 
                 <ul className="ful1">
                     <li><Link href="#about" style={{ color: mode === "Dark" ? "white" : "#0f051d" }}>About</Link></li>
-                    <li><Link href="#packages" style={{ color: mode === "Dark" ? "white" : "#0f051d" }}>Packages</Link></li>
+                    <li><Link href="#packages" style={{ color: mode === "Dark" ? "white" : "#0f051d" }} >Packages</Link></li>
                     <li><Link href="#team" style={{ color: mode === "Dark" ? "white" : "#0f051d" }}>Team</Link></li>
                     <li><Link href="#question" style={{ color: mode === "Dark" ? "white" : "#0f051d" }}>Faqs</Link></li>
                 </ul>
@@ -44,10 +44,10 @@ export default function Navbar({ mode }) {
                 </div>
                 <hr />
                 <ul className="ful1">
-                    <li><Link href="#about" style={{ color: mode === "Dark" ? "white" : "#0f051d" }}>About</Link></li>
-                    <li><Link href="#packages" style={{ color: mode === "Dark" ? "white" : "#0f051d" }}>Packages</Link></li>
-                    <li><Link href="#team" style={{ color: mode === "Dark" ? "white" : "#0f051d" }}>Team</Link></li>
-                    <li><Link href="#question" style={{ color: mode === "Dark" ? "white" : "#0f051d" }}>Faqs</Link></li>
+                    <li><Link href="#about" style={{ color: mode === "Dark" ? "white" : "#0f051d" }} onClick={() => sete("100%")}>About</Link></li>
+                    <li><Link href="#packages" style={{ color: mode === "Dark" ? "white" : "#0f051d" }} onClick={() => sete("100%")}>Packages</Link></li>
+                    <li><Link href="#team" style={{ color: mode === "Dark" ? "white" : "#0f051d" }} onClick={() => sete("100%")}>Team</Link></li>
+                    <li><Link href="#question" style={{ color: mode === "Dark" ? "white" : "#0f051d" }} onClick={() => sete("100%")}>Faqs</Link></li>
                 </ul>
 
                 <ul className="ful2">
