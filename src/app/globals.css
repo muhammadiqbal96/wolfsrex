@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.toggle_btn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.toggle_btn span {
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 22px;
+    padding: 9px;
+    transition: all 0.7s;
+}
+
+.toggle_btn span:hover {
+    transform: scale(1.2);
+}

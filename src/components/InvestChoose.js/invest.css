@@ -1,0 +1,1034 @@
+:root {
+    --textcolor: linear-gradient(205deg,
+            hsl(294deg 100% 47%) 0%,
+            hsl(293deg 100% 47%) 6%,
+            hsl(291deg 100% 47%) 11%,
+            hsl(290deg 100% 47%) 15%,
+            hsl(288deg 100% 47%) 18%,
+            hsl(287deg 100% 47%) 22%,
+            hsl(285deg 100% 47%) 25%,
+            hsl(284deg 100% 47%) 28%,
+            hsl(282deg 100% 48%) 30%,
+            hsl(280deg 100% 48%) 33%,
+            hsl(279deg 100% 48%) 36%,
+            hsl(277deg 100% 48%) 39%,
+            hsl(275deg 100% 48%) 42%,
+            hsl(273deg 100% 48%) 46%,
+            hsl(271deg 100% 48%) 50%,
+            hsl(269deg 100% 48%) 54%,
+            hsl(267deg 100% 48%) 60%,
+            hsl(264deg 100% 49%) 67%,
+            hsl(262deg 100% 49%) 76%,
+            hsl(259deg 100% 49%) 100%);
+}
+
+.investChooseCont {
+    padding-inline: 80px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.starDiv {
+    display: flex;
+    padding-block: 20px;
+}
+
+.sd1,
+.sd3 {
+    justify-content: space-between;
+}
+
+.sd2 {
+    justify-content: space-between;
+    padding-bottom: -70px;
+    padding-inline: 80px;
+}
+
+.sd1 img {
+    width: 25px;
+}
+
+.sd2 img {
+    width: 45px;
+}
+
+.sd3 img {
+    width: 17px;
+}
+
+.starDiv img {
+    position: relative;
+    top: 0px;
+    animation: updownStar 3s 0s infinite ease-in-out;
+}
+
+@keyframes updownStar {
+    0% {
+        top: 0px;
+    }
+
+    50% {
+        top: 40px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+.investText {
+    text-align: center;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    z-index: 2;
+}
+
+.investText h1 {
+    font-size: 100px;
+    font-family: sans;
+    font-weight: bold;
+}
+
+.coloredText {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--textcolor);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.imgcontainer {
+    margin-inline: 10px;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.imgcontainer div img {
+    object-fit: cover;
+    border-width: 8px;
+    border-style: solid;
+    color: #312741;
+}
+
+.imgcont_1 img {
+    border-radius: 25px;
+    width: 157px;
+    height: 225px;
+}
+
+.imgcont_2 img {
+    border-radius: 25px;
+    width: 158px;
+    height: 158px;
+}
+
+.imgcont_3 img {
+    border-radius: 25px;
+    width: 378px;
+    height: 560px;
+}
+
+.imgcont_4 img {
+    border-radius: 25px;
+    width: 158px;
+    height: 158px;
+}
+
+.imgcont_5 img {
+    border-radius: 25px;
+    width: 157px;
+    height: 225px;
+}
+
+.imgcont_2,
+.imgcont_4 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.divider {
+    text-align: center;
+    padding-block: 110px;
+}
+
+.whytext {
+    text-align: center;
+}
+
+.whytext h1 {
+    font-size: 80px;
+    font-family: sans;
+    font-weight: bolder;
+}
+
+.sd3 {
+    margin-top: -80px;
+    margin-bottom: 90px;
+}
+
+.whyboxcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.whybox_1,
+.whybox_3 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.subbox {
+    border: 1px solid rgba(128, 128, 128, 0.192);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.041);
+    width: 335px;
+    height: 195px;
+    display: flex;
+    padding: 30px;
+    align-items: self-start;
+}
+
+.subbox span,
+.subbox i,
+.subbox i {
+    background: var(--textcolor);
+    padding: 16px;
+    color: white;
+    font-size: 28px;
+    border-radius: 15px;
+}
+
+.subbox div {
+    margin-left: 30px;
+    width: 180px;
+    height: 280px;
+}
+
+.subbox div h5 {
+    font-size: 22px;
+    font-family: ubuntu;
+    font-weight: bolder;
+}
+
+.subbox div p {
+    font-size: 14px;
+}
+
+.whybox_2 img {
+    width: 350px;
+}
+
+/* About Section */
+.aboutCont .aboutimgtextCont {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.aboutCont .aboutimg img {
+    width: 550px;
+    height: 560px;
+    border-radius: 25px;
+}
+
+.aboutTextCont {
+    padding-left: 80px;
+}
+
+.aboutTextCont .aboutText h1 {
+    font-size: 80px;
+    font-family: sans;
+    font-weight: bolder;
+}
+
+.aboutTextCont .paras p {
+    font-size: 18px;
+    font-family: system-ui;
+    padding-block: 8px;
+}
+
+.aboutBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutBox>div {
+    text-align: center;
+    padding: 25px;
+    border: 1px solid rgba(128, 128, 128, 0.192);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.041);
+}
+
+.aboutBox>div h1 {
+    font-size: 40px;
+    font-family: sans;
+    font-weight: bolder;
+}
+
+.aboutEnd {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    gap: 30%;
+}
+
+.aboutEnd>section {
+    width: auto;
+    display: flex;
+    gap: 40%;
+}
+
+.aboutEnd>section>div {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.aboutEnd>section>div>i {
+    font-size: 40px;
+}
+
+.aboutEnd>section>div>h1 {
+    font-family: system-ui;
+    font-size: 80px;
+    font-weight: bolder;
+}
+
+@media screen and (max-width:1240px) {
+    .subbox {
+        width: 315px;
+        height: 180px;
+    }
+
+    .whybox_2 img {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:1155px) {
+    .whyboxcontainer {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .whybox_1,
+    .whybox_3 {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .aboutCont .aboutimgtextCont {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .aboutCont {
+        margin-left: -20px;
+    }
+
+    .aboutCont .aboutimg img {
+        width: 90vw;
+        height: auto;
+        border-radius: 25px;
+    }
+
+    .aboutTextCont {
+        padding-left: 5px;
+    }
+
+    .aboutBox {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .aboutEnd {
+        margin-top: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    .aboutEnd>section {
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40%;
+    }
+
+}
+
+@media screen and (max-width:1115px) {
+    .imgcont_1 img {
+        width: 135px;
+        height: 205px;
+    }
+
+    .imgcont_2 img {
+        width: 142px;
+        height: 142px;
+    }
+
+    .imgcont_3 img {
+        width: 360px;
+        height: 540px;
+    }
+
+    .imgcont_4 img {
+        width: 142px;
+        height: 142px;
+    }
+
+    .imgcont_5 img {
+        width: 135px;
+        height: 205px;
+    }
+
+    .imgcont_2,
+    .imgcont_4 {
+        gap: 30px;
+    }
+
+    .subbox {
+        width: 335px;
+        height: 195px;
+    }
+}
+
+@media screen and (max-width:1090px) {
+    .investText {
+        margin-top: -20px;
+    }
+
+    .investText h1 {
+        font-size: 90px;
+    }
+
+    .whybox_1,
+    .whybox_3 {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width:1013px) {
+    .investChooseCont {
+        padding-inline: 60px;
+    }
+
+    .investText {
+        margin-top: 0px;
+    }
+
+    .investText h1 {
+        font-size: 85px;
+    }
+
+    .imgcont_1,
+    .imgcont_5 {
+        width: 125px;
+        height: 190px;
+    }
+
+    .imgcont_2 img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .imgcont_3 img {
+        width: 355px;
+        height: 540px;
+    }
+
+    .imgcont_4 img {
+        width: 142px;
+        height: 142px;
+    }
+
+    .imgcont_2,
+    .imgcont_4 {
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width:995px) {
+
+    .imgcont_1,
+    .imgcont_5 {
+        display: none;
+    }
+
+    .imgcont_2 img {
+        width: 185px;
+        height: 185px;
+    }
+
+    .imgcont_3 img {
+        width: 395px;
+        height: 600px;
+    }
+
+    .imgcont_4 img {
+        width: 185px;
+        height: 185px;
+    }
+}
+
+@media screen and (max-width:970px) {
+    .whytext h1 {
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width:890px) {
+    .investChooseCont {
+        padding-inline: 50px;
+    }
+
+    .investText {
+        margin-top: 10px;
+    }
+
+    .investText h1 {
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width:842px) {
+    .investText {
+        margin-top: 20px;
+    }
+
+    .investText h1 {
+        font-size: 75px;
+    }
+
+    .whytext h1 {
+        font-size: 60px;
+    }
+
+    .imgcont_2 img {
+        width: 155px;
+        height: 155px;
+    }
+
+    .imgcont_4 img {
+        width: 155px;
+        height: 155px;
+    }
+}
+
+@media screen and (max-width:813px) {
+
+    .whybox_1,
+    .whybox_3 {
+        flex-direction: column;
+    }
+
+    .subbox {
+        width: 90vw;
+        padding-bottom: 0px;
+        height: 130px;
+    }
+
+    .subbox div {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:780px) {
+    .investChooseCont {
+        padding-inline: 20px;
+    }
+
+    .investText {
+        margin-top: 50px;
+    }
+
+    .investText h1 {
+        font-size: 75px;
+        padding-bottom: 20px;
+    }
+
+    .investChooseCont .sd1 img {
+        width: 20px;
+    }
+
+    .investChooseCont .sd2 img {
+        width: 40px;
+    }
+
+    .investChooseCont .sd3 img {
+        width: 14 px;
+    }
+
+    .imgcont_2 img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .imgcont_4 img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .imgcont_3 img {
+        width: 355px;
+        height: 560px;
+    }
+
+    .aboutCont {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width:710px) {
+
+    .imgcont_2 img {
+        width: 132px;
+        height: 132px;
+    }
+
+    .imgcont_3 img {
+        width: 345px;
+        height: 520px;
+    }
+
+    .imgcont_4 img {
+        width: 132px;
+        height: 132px;
+    }
+
+    .imgcont_2,
+    .imgcont_4 {
+        gap: 25px;
+    }
+
+    .whytext h1 {
+        font-size: 55px;
+    }
+}
+
+@media screen and (max-width:680px) {
+    .imgcontainer {
+        margin-inline: 10px;
+        gap: 10px;
+    }
+
+    .imgcont_2 img {
+        width: 122px;
+        height: 122px;
+        border-radius: 50px;
+    }
+
+    .imgcont_3 img {
+        width: 330px;
+        height: 510px;
+    }
+
+    .imgcont_4 img {
+        width: 122px;
+        height: 122px;
+        border-radius: 50px;
+    }
+
+    .imgcont_2,
+    .imgcont_4 {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .whytext h1 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width:610px) {
+    .imgcont_2 img {
+        width: 110px;
+        height: 110px;
+        border-radius: 50px;
+    }
+
+    .imgcont_3 img {
+        width: 300px;
+        height: 490px;
+    }
+
+    .imgcont_4 img {
+        width: 110px;
+        height: 110px;
+        border-radius: 50px;
+    }
+
+    .imgcont_2,
+    .imgcont_4 {
+        gap: 10px;
+    }
+
+    .whytext h1 {
+        font-size: 48px;
+    }
+
+    .aboutEnd {
+        margin-top: 20%;
+        gap: 20px;
+    }
+
+    .aboutEnd>section>div>i {
+        font-size: 30px;
+    }
+
+    .aboutEnd>section>div>h1 {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width:565px) {
+    .investChooseCont {
+        padding-inline: 10px;
+    }
+
+    .investText {
+        margin-top: 50px;
+    }
+
+    .investText h1 {
+        font-size: 55px;
+    }
+
+    .investChooseCont .sd1 img {
+        width: 20px;
+    }
+
+    .investChooseCont .sd2 img {
+        width: 40px;
+    }
+
+    .investChooseCont .sd3 img {
+        width: 14px;
+    }
+
+    .imgcontainer div img {
+        border-width: 6px;
+    }
+
+    .imgcont_2 img {
+        width: 113px;
+        height: 113px;
+        border-radius: 50px;
+    }
+
+    .imgcont_3 img {
+        width: 250px;
+        height: 430px;
+    }
+
+    .imgcont_4 img {
+        width: 113px;
+        height: 113px;
+        border-radius: 50px;
+    }
+
+    .whytext h1 {
+        font-size: 43px;
+    }
+
+    .aboutTextCont .aboutText h1 {
+        font-size: 60px;
+    }
+
+    .aboutTextCont .paras p {
+        font-size: 16px;
+    }
+
+    .aboutBox {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:525px) {
+    .subbox {
+        height: 150px;
+    }
+    .imgcont_2 img,
+    .imgcont_4 img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+    }
+}
+
+@media screen and (max-width:495px) {
+    .imgcont_3 img {
+        width: 220px;
+        height: 370px;
+    }
+
+    .divider {
+        padding-block: 80px;
+    }
+
+    .divider img {
+        width: 290px;
+    }
+
+    .whytext h1 {
+        font-size: 38px;
+    }
+}
+
+@media screen and (max-width:475px) {
+    .imgcont_2 img,
+    .imgcont_4 img  {
+        width: 90px;
+        height: 90px;
+        border-radius: 50px;
+    }
+}
+@media screen and (max-width:450px) {
+    .imgcont_2 img,
+    .imgcont_4 img  {
+        width: 87px;
+        height: 87px;
+        border-radius: 50px;
+    }
+}
+
+@media screen and (max-width:440px) {
+    .whytext h1 {
+        font-size: 35px;
+    }
+
+    .aboutEnd>section>div>i {
+        font-size: 25px;
+    }
+
+    .aboutEnd>section>div>h1 {
+        font-size: 50px;
+    }
+
+    .imgcont_2 img,
+    .imgcont_4 img  {
+        width: 82px;
+        height: 82px;
+        border-radius: 50px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .imgcont_3 img {
+        width: 195px;
+        height: 310px;
+    }
+
+    .imgcont_2 img,
+    .imgcont_4 img  {
+        width: 78px;
+        height: 78px;
+        border-radius: 50px;
+    }
+
+    .whytext h1 {
+        font-size: 33px;
+    }
+
+    .aboutTextCont .aboutText h1 {
+        font-size: 50px;
+    }
+
+    .aboutBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutBox>div {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width:407px) {
+    .subbox {
+        height: 170px;
+    }
+
+    .subbox div h5 {
+        font-size: 20px;
+    }
+
+    .subbox div p {
+        font-size: 12px;
+    }
+
+    .whybox_2 img {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .imgcont_3 img {
+        width: 185px;
+        height: 310px;
+    }
+
+    .imgcont_2 img,
+    .imgcont_4 img  {
+        width: 73px;
+        height: 73px;
+        border-radius: 50px;
+    }
+
+    .investChooseCont {
+        padding-inline: 5px;
+    }
+
+    .investText h1 {
+        font-size: 45px;
+    }
+
+    .investChooseCont .sd1 img {
+        width: 16px;
+    }
+
+    .investChooseCont .sd2 img {
+        width: 32px;
+    }
+
+    .investChooseCont .sd3 img {
+        width: 12px;
+    }
+
+    .divider img {
+        width: 250px;
+    }
+
+    .whytext h1 {
+        font-size: 31px;
+    }
+
+    .aboutEnd {
+        margin-top: 20%;
+        gap: 20px;
+    }
+
+    .aboutEnd>section>div>i {
+        font-size: 20px;
+    }
+
+    .aboutEnd>section>div>h1 {
+        font-size: 35px;
+    }
+
+}
+
+@media screen and (max-width:385px) {
+    .aboutTextCont .paras>p{
+        font-size: 15px;
+    }
+
+    .imgcont_3 img {
+        width: 180px;
+        height: 310px;
+    }
+
+    .imgcont_2 img,
+    .imgcont_4 img  {
+        width: 70px;
+        height: 70px;
+        border-radius: 50px;
+    }
+}
+@media screen and (max-width:365px) {
+    .whytext h1 {
+        font-size: 29px;
+    }
+
+    .aboutTextCont .aboutText h1 {
+        font-size: 45px;
+    }
+
+    .imgcontainer div img {
+        border-width: 5px;
+    }
+
+    .imgcont_3 img {
+        width: 170px;
+        height: 310px;
+    }
+
+    .imgcont_2 img,
+    .imgcont_4 img  {
+        width: 65px;
+        height: 65px;
+        border-radius: 50px;
+    }
+}
+
+@media screen and (max-width:343px) {
+    .investText h1 {
+        font-size: 40px;
+    }
+
+    .investChooseCont .sd1 img {
+        width: 14px;
+    }
+
+    .investChooseCont .sd2 img {
+        width: 25px;
+    }
+
+    .investChooseCont .sd3 img {
+        width: 10px;
+    }
+    .imgcont_3 img {
+        width: 165px;
+        height: 310px;
+    }
+
+    .imgcont_2 img,
+    .imgcont_4 img  {
+        width: 62px;
+        height: 62px;
+        border-radius: 50px;
+    }
+
+    .divider img {
+        width: 230px;
+    }
+
+    .whytext h1 {
+        font-size: 26px;
+    }
+}
+
+@media only screen and (max-width:330px) {
+    .imgcont_3 img {
+        width: 160px;
+        height: 310px;
+    }
+
+    .imgcont_2 img,
+    .imgcont_4 img  {
+        width: 60px;
+        height: 58px;
+        border-radius: 50px;
+    }
+    .aboutTextCont .aboutText h1 {
+        font-size: 40px;
+    }
+}

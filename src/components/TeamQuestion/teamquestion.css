@@ -1,0 +1,443 @@
+#team,
+#question,
+.endofFrontPage {
+    padding-inline: 80px;
+}
+
+#team>h1,
+#question>h1,
+.endofFrontPage>h1 {
+    text-align: center;
+    font-size: 80px;
+    font-weight: bolder;
+}
+
+#team .teamimgtextCont {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+#team .teamimgtextCont span {
+    width: 170px;
+    font-size: 18px;
+}
+
+#team .teamimgtextCont .teamimgcont {
+    display: flex;
+    gap: 6%;
+}
+
+#team .teamimgtextCont .teamimgcont img {
+    width: 280px;
+    height: 394px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+#team .teamimgtextCont .teamimgcont h1 {
+    position: relative;
+    right: 35%;
+    top: 40%;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.question {
+    margin-left: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.question .accordian {
+    border: 1px solid rgba(128, 128, 128, 0.192);
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.041);
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 60px;
+    margin-top: 80px;
+    width: 700px;
+}
+
+.question .accordian ul {
+    list-style: none;
+}
+
+.question .accordian ul li {
+    padding-bottom: 1px;
+}
+
+.question .accordian ul hr {
+    padding-top: 2px;
+}
+
+.question .accordian ul li h3 {
+    display: flex;
+    justify-content: space-between;
+    font-family: ubuntu;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.question .accordian ul li h3 span {
+    margin-right: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    cursor: pointer;
+    opacity: 0.2;
+}
+
+.question .accordian ul li div p {
+    display: none;
+    text-align: justify;
+    opacity: 0.8;
+}
+
+.joinwhatsappbtnDiv {
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+}
+
+.pageendallLinksCont {
+    padding-top: 120px;
+    padding-bottom: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.joinwhatsappbtn {
+    color: white;
+    background-image: var(--textcolor);
+    border: none;
+    padding-block: 15px;
+    padding-inline: 25px;
+    font-size: 20px;
+    font-family: ubuntu;
+    font-weight: 500;
+    border-radius: 35px;
+}
+
+.pageendLinksFBTW {
+    display: flex;
+    gap: 20px;
+}
+
+.pageendLinksPrivacyTerms {
+    display: flex;
+    gap: 15%;
+
+}
+
+.pageendLinksFBTW li,
+.pageendLinksPrivacyTerms li {
+    list-style: none;
+}
+
+.pageendLinksPrivacyTerms a {
+    text-decoration: none;
+    color: blue;
+}
+
+.pageendLinksPrivacyTerms a:hover {
+    text-decoration: underline;
+}
+
+.pageendLinksFBTW i {
+    font-size: 30px;
+    transition: all 0.7s;
+    cursor: pointer;
+}
+
+.pageendLinksFBTW i:hover {
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width:1280px) {
+
+    #team,
+    #question,
+    .endofFrontPage {
+        padding-inline: 40px;
+    }
+}
+
+@media only screen and (max-width:1215px) {
+    .question {
+        margin-left: -70px;
+    }
+}
+
+@media only screen and (max-width:1140px) {
+
+    #team,
+    #question,
+    .endofFrontPage {
+        padding-inline: 30px;
+    }
+}
+
+@media only screen and (max-width:1110px) {
+
+    #team,
+    #question,
+    .endofFrontPage {
+        padding-inline: 25px;
+    }
+
+    .question .accordian {
+        padding-right: 40px;
+    }
+
+    #question>h1 {
+        font-size: 60px;
+    }
+}
+
+@media only screen and (max-width:1020px) {
+    .question {
+        margin-left: 20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #question>h1 {
+        font-size: 80px;
+    }
+}
+
+@media only screen and (max-width:860px) {
+    #team .teamimgtextCont {
+        justify-content: start;
+    }
+
+    #team .teamimgtextCont .teamimgcont {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width:760px) {
+    .question .accordian {
+        margin-top: 60px;
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width:700px) {
+
+    #team>h1,
+    #question>h1,
+    .endofFrontPage>h1 {
+        font-size: 60px;
+    }
+
+    #team .teamimgtextCont {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #team .teamimgtextCont .teamimgcont h1 {
+        align-self: center;
+    }
+}
+
+@media only screen and (max-width:685px) {
+
+    #team>h1,
+    #question>h1,
+    .endofFrontPage>h1 {
+        font-size: 60px;
+    }
+
+    .question .accordian {
+        margin-top: 60px;
+        width: 500px;
+    }
+
+    .joinwhatsappbtn {
+        padding-block: 10px;
+        padding-inline: 20px;
+        font-size: 19px;
+        font-size: 20px;
+        border-radius: 35px;
+    }
+}
+
+@media only screen and (max-width:590px) {
+
+    #team>h1,
+    #question>h1,
+    .endofFrontPage>h1 {
+        font-size: 50px;
+    }
+
+    .joinwhatsappbtn {
+        margin-top: -20px;
+        padding-block: 9px;
+        padding-inline: 17px;
+        font-size: 18px;
+        margin-inline: 30px;
+    }
+
+    .question .accordian {
+        padding-top: 40px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        padding-right: 30px;
+    }
+
+    .teamquestionstardiv2 img:nth-child(1) {
+        margin-left: -40px;
+    }
+
+    .teamquestionstardiv2 img:nth-child(2) {
+        margin-right: -40px;
+    }
+
+    .question .accordian {
+        margin-top: 60px;
+        width: 450px;
+    }
+
+}
+
+@media only screen and (max-width:550px) {
+
+    #team>h1,
+    #question>h1,
+    .endofFrontPage>h1 {
+        font-size: 40px;
+    }
+
+    .question .accordian {
+        padding-top: 35px;
+        padding-bottom: 13px;
+        padding-left: 13px;
+        padding-right: 25px;
+        width: 400px;
+    }
+
+    .question .accordian ul li h3 {
+        font-size: 19px;
+    }
+
+    .joinwhatsappbtn {
+        padding-block: 9px;
+        padding-inline: 17px;
+        font-size: 13px;
+        margin-inline: 30px;
+    }
+}
+
+@media only screen and (max-width:485px) {
+    #team .teamimgtextCont span {
+        width: 170px;
+        font-size: 17px;
+    }
+
+    #team .teamimgtextCont .teamimgcont {
+        align-self: center;
+    }
+
+    #team .teamimgtextCont .teamimgcont img {
+        width: 200px;
+        height: 304px;
+
+    }
+
+    #team .teamimgtextCont .teamimgcont h1 {
+        font-size: 40px;
+    }
+
+    .question .accordian ul li h3 {
+        font-size: 18px;
+    }
+
+    .question .accordian ul li div p {
+        font-size: 14px;
+    }
+
+    .teamquestionstardiv2 img {
+        width: 20px;
+    }
+
+    .question .accordian {
+        padding-top: 30px;
+        padding-bottom: 11px;
+        padding-left: -20px;
+        padding-right: 20px;
+    }
+}
+
+@media only screen and (max-width:440px) {
+    #team>h1,
+    #question>h1,
+    .endofFrontPage>h1 {
+        font-size: 35px;
+    }
+    .question .accordian {
+        width: 350px;
+        padding-top: 20px;
+        padding-right: 30px;
+    }
+
+    .question .accordian ul li h3 {
+        font-size: 17px;
+    }
+
+    .question .accordian ul li div p {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width:420px) {
+    #team,
+    #question,
+    .endofFrontPage {
+        padding-inline: 0px;
+    }
+
+    .question .accordian {
+        width: 300px;
+    }
+
+    .question .accordian ul li h3 {
+        font-size: 15px;
+    }
+
+    .question .accordian ul li div p {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width:390px) {
+    #team .teamimgtextCont .teamimgcont img {
+        width: 180px;
+        height: 290px;
+
+    }
+
+    #team .teamimgtextCont .teamimgcont h1 {
+        font-size: 33px;
+    }
+
+
+    .question .accordian {
+        width: 270px;
+    }
+
+    .question .accordian ul li h3 {
+        font-size: 14px;
+    }
+
+    .question .accordian ul li div p {
+        font-size: 10px;
+    }
+}
