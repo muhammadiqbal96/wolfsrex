@@ -202,7 +202,7 @@
 
 @media only screen and (max-width:1020px) {
     .question {
-        margin-left: -8px;
+        margin-left: -5px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -260,6 +260,7 @@
         margin-top: 60px;
         width: 500px;
     }
+
     .joinwhatsappbtn {
         padding-block: 10px;
         padding-inline: 20px;
@@ -376,11 +377,13 @@
 }
 
 @media only screen and (max-width:440px) {
+
     #team>h1,
     #question>h1,
     .endofFrontPage>h1 {
         font-size: 35px;
     }
+
     .question .accordian {
         width: 350px;
         padding-top: 20px;
@@ -397,6 +400,7 @@
 }
 
 @media only screen and (max-width:420px) {
+
     #team,
     #question,
     .endofFrontPage {
@@ -405,7 +409,7 @@
 
     .question .accordian {
         margin-top: 35px;
-        width: 300px;
+        width: 340px;
     }
 
     .question .accordian ul li h3 {
@@ -430,7 +434,7 @@
 
 
     .question .accordian {
-        width: 270px;
+        width: 320px;
     }
 
     .question .accordian ul li h3 {
@@ -439,5 +443,16 @@
 
     .question .accordian ul li div p {
         font-size: 10px;
+    }
+}
+
+@media only screen and (max-width:365px) {
+    .question .accordian {
+        width: 300px;
+    }
+}
+@media only screen and (max-width:342px) {
+    .question .accordian {
+        width: 280px;
     }
 }
