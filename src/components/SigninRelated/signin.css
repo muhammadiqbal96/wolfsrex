@@ -32,12 +32,14 @@
     width: 400px;
 }
 
+.textbtnCont h3 {
+    font-weight: bold;
+}
+
 .textbtnCont button {
-    color: white;
     background-color: #AF47E2;
     border-radius: 20px;
     font-weight: bolder;
-    border: 1px solid white;
     padding: 7px 15px;
 }
 
@@ -82,10 +84,6 @@
         width: 300px;
     }
 
-    .textbtnCont h3 {
-        font-size: 21px;
-    }
-
     .textbtnCont p {
         font-size: 14px;
     }
@@ -120,11 +118,11 @@
 
     .middelDivBtnCont .textbtnCont {
         margin-top: 50px;
-        margin-left: 60px;
+        margin-left: 50px;
     }
 
     #loginContainer {
-        margin-top: 250px;
+        margin-top: 200px;
         margin-right: 0px;
     }
 }
@@ -152,7 +150,7 @@
     }
 
     #loginContainer {
-        margin-top: 150px;
+        margin-top: 120px;
         margin-right: 0px;
     }
 }
@@ -161,6 +159,7 @@
     .textbtnCont p {
         font-size: 11px;
     }
+
     .textbtnCont button {
         font-size: 12px;
         padding: 4px 9px;

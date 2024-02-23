@@ -26,7 +26,7 @@ export default function FullDevSignIn() {
 
                     <h3>Register Now</h3>
                     <p>If you are not member of this website then create your account for successfull login</p>
-                    <button onClick={showSignUp}>SIGN UP</button>
+                    <button onClick={showSignUp} style={{color:mode==="Dark"?"white":"0f051d",border:mode==="Dark"?"2px solid white":"2px solid #0f051d"}}>SIGN UP</button>
 
                 </div>
             </div>
