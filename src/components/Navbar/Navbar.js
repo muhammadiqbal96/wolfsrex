@@ -28,7 +28,7 @@ export default function Navbar({ mode }) {
                 <ul className="ful2">
                     <li><i className="fa-brands fa-square-x-twitter"></i></li>
                     <li><i className="fa-brands fa-square-facebook"></i></li>
-                    <li><button onClick={() => router.push("/sigin")}>Sign In</button></li>
+                    <li><button onClick={() => router.push("/signin")}>Sign In</button></li>
                 </ul>
             </nav>
 
@@ -54,7 +54,7 @@ export default function Navbar({ mode }) {
                 </ul>
 
                 <div className="btnLinkCont">
-                    <button onClick={() => router.push("/sigin")}>Sign In</button>
+                    <button onClick={() => router.push("/signin")}>Sign In</button>
                     <ul className="ful2">
                         <li><Link href="/" style={{ color: mode === "Dark" ? "white" : "black" }}><i className="fa-brands fa-square-x-twitter"></i></Link></li>
                         <li><Link href="/" style={{ color: mode === "Dark" ? "white" : "black" }}><i className="fa-brands fa-square-facebook"></i></Link></li>
