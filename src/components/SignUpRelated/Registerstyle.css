@@ -1,0 +1,122 @@
+
+#registermain h1 {
+    font-weight: bold;
+    font-family: monospace;
+    margin-bottom: 30px;
+}
+
+#registermain form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#registermain form input {
+    width: 350px;
+    min-width: 100px;
+    height: 45px;
+    border: none;
+    border: 1px solid rgba(128, 128, 128, 0.253);
+    border-radius: 12px;
+}
+
+#registermain form input:focus {
+    outline: 2px solid #AF47E2;
+}
+
+#registermain form input[placeholder] {
+    padding-inline: 12px;
+}
+
+#registermain form button {
+    margin-top: 25px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    width: 200px;
+    font-family: ubuntu;
+    height: 45px;
+    background-color: #AF47E2;
+    color: white;
+    transition: all 0.4s;
+}
+
+#registermain form button:hover {
+    background-color: #5b0188;
+}
+
+#registermain #or {
+    margin-block: 25px;
+    font-size: larger;
+    font-weight: 600;
+    color: gray;
+}
+
+#registermain #end {
+    margin-top: -10px;
+    font-size: 16px;
+}
+
+#registermain #end a {
+    font-size: 17px;
+    text-decoration: none;
+    background: transparent;
+    color: blue;
+    font-weight: 500;
+}
+
+#registermain #end a:hover {
+    text-decoration: 2px solid underline;
+}
+
+@media only screen and (max-width:400px) {
+    #registermain form input {
+        width: 300px;
+        height: 43px;
+    }
+    #registermain form button {
+        margin-top: 18px;
+        width: 150px;
+        height: 43px;
+    }
+
+    #registermain #or {
+        margin-block: 18px;
+    }
+
+    #registermain #end {
+        margin-top: -10px;
+        font-size: 15px;
+    }
+
+    #registermain #end a {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width:330px) {
+    #registermain form input {
+        width: 250px;
+        height: 41px;
+    }
+
+    #registermain form button {
+        margin-top: 14px;
+        width: 120px;
+        height: 41px;
+    }
+
+    #registermain #or {
+        margin-block: 18px;
+    }
+
+    #registermain #end {
+        font-size: 13px;
+    }
+
+    #registermain #end a {
+        font-size: 14px;
+    }
+}

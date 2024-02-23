@@ -75,7 +75,8 @@
     transform: scale(1.2);
 }
 
-.full-nav .ful2 li button {
+.full-nav .ful2 li button,
+.btnLinkCont button {
     color: white;
     background-image: var(--textcolor);
     border: none;
@@ -87,8 +88,25 @@
     border-radius: 25px;
 }
 
-.full-nav .ful2 li button:hover {
+.full-nav .ful2 li button:hover,
+.btnLinkCont button:hover {
     opacity: 0.9;
+}
+
+.btnLinkCont button {
+    width: 400px;
+}
+
+.btnLinkCont {
+    margin-inline: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnLinkCont ul {
+    justify-self: center;
 }
 
 @media only screen and (max-width:1400px) {
@@ -249,6 +267,10 @@
         width: 90px;
         height: 90px;
     }
+
+    .btnLinkCont button {
+        width: 350px;
+    }
 }
 
 @media only screen and (max-width:430px) {
@@ -259,5 +281,15 @@
     .ham-nav .flogoimg img {
         width: 80px;
         height: 80px;
+    }
+
+    .btnLinkCont button {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width:370px) {
+    .btnLinkCont button {
+        width: 250px;
     }
 }

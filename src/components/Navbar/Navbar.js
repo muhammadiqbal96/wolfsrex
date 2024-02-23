@@ -2,7 +2,10 @@
 import Link from "next/link"
 import './style.css'
 import { useState } from "react"
+import { useRouter } from "next/navigation"
 export default function Navbar({ mode }) {
+
+    const router = useRouter();
 
     const [e, sete] = useState("100%");
     return (
@@ -25,7 +28,7 @@ export default function Navbar({ mode }) {
                 <ul className="ful2">
                     <li><i className="fa-brands fa-square-x-twitter"></i></li>
                     <li><i className="fa-brands fa-square-facebook"></i></li>
-                    <li><button>Sign In</button></li>
+                    <li><button onClick={() => router.push("/sigin")}>Sign In</button></li>
                 </ul>
             </nav>
 
@@ -50,11 +53,14 @@ export default function Navbar({ mode }) {
                     <li><Link href="#question" style={{ color: mode === "Dark" ? "white" : "#0f051d" }} onClick={() => sete("100%")}>Faqs</Link></li>
                 </ul>
 
-                <ul className="ful2">
-                    <li><Link href="/" style={{ color: mode === "Dark" ? "white" : "black" }}><i className="fa-brands fa-square-x-twitter"></i></Link></li>
-                    <li><Link href="/" style={{ color: mode === "Dark" ? "white" : "black" }}><i className="fa-brands fa-square-facebook"></i></Link></li>
-                    <li><Link href="/" title="Login" style={{ color: mode === "Dark" ? "white" : "black" }} hint="login"><img src="/signin.png" alt="login" width={45} /></Link></li>
-                </ul>
+                <div className="btnLinkCont">
+                    <button onClick={() => router.push("/sigin")}>Sign In</button>
+                    <ul className="ful2">
+                        <li><Link href="/" style={{ color: mode === "Dark" ? "white" : "black" }}><i className="fa-brands fa-square-x-twitter"></i></Link></li>
+                        <li><Link href="/" style={{ color: mode === "Dark" ? "white" : "black" }}><i className="fa-brands fa-square-facebook"></i></Link></li>
+                    </ul>
+                </div>
+
             </div>
 
         </div>
