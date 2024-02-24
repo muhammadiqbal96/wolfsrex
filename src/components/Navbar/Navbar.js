@@ -3,8 +3,10 @@ import Link from "next/link"
 import './style.css'
 import { useState } from "react"
 import { useRouter } from "next/navigation"
+import { useSession } from "next-auth/react"
+import { signOut } from "next-auth/react"
 export default function Navbar({ mode }) {
-
+    const { data: session, status: sessionStatus } = useSession();
     const router = useRouter();
 
     const [e, sete] = useState("100%");
@@ -26,9 +28,18 @@ export default function Navbar({ mode }) {
                 </ul>
 
                 <ul className="ful2">
+                    {
+                        sessionStatus === "authenticated" && <li><span className="material-symbols-outlined" title="Dashboard" style={{ cursor: "pointer", fontSize: "32px" }} onClick={()=>router.push("/dashboard")}>dashboard_customize</span></li>
+                    }
                     <li><i className="fa-brands fa-square-x-twitter"></i></li>
                     <li><i className="fa-brands fa-square-facebook"></i></li>
-                    <li><button onClick={() => router.push("/signin")}>Sign In</button></li>
+                    <li>
+                        {
+                            sessionStatus === "unauthenticated" ?
+                                <button onClick={() => router.push("/signin")}>Sign In</button> :
+                                <button onClick={() => signOut()}>Sign Out</button>
+                        }
+                    </li>
                 </ul>
             </nav>
 
@@ -54,8 +65,15 @@ export default function Navbar({ mode }) {
                 </ul>
 
                 <div className="btnLinkCont">
-                    <button onClick={() => router.push("/signin")}>Sign In</button>
+                    {
+                        sessionStatus === "unauthenticated" ?
+                            <button onClick={() => router.push("/signin")}>Sign In</button> :
+                            <button onClick={() => signOut()}>Sign Out</button>
+                    }
                     <ul className="ful2">
+                        {
+                            sessionStatus === "authenticated" && <li><span className="material-symbols-outlined" title="Dashboard" style={{ cursor: "pointer", fontSize: "40px" }} onClick={()=>router.push("/dashboard")}>dashboard_customize</span></li>
+                        }
                         <li><Link href="/" style={{ color: mode === "Dark" ? "white" : "black" }}><i className="fa-brands fa-square-x-twitter"></i></Link></li>
                         <li><Link href="/" style={{ color: mode === "Dark" ? "white" : "black" }}><i className="fa-brands fa-square-facebook"></i></Link></li>
                     </ul>
