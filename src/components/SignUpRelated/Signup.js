@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import styles from "@/app/page.module.css";
 import { useRouter } from "next/navigation";
 import { useSession } from "next-auth/react";
+import { SendEmail } from "@/Nodemailer/Nodemailer";
 
 export default function Signup() {
 
@@ -43,6 +44,9 @@ export default function Signup() {
     });
     data = await data.json();
     if (data.success === true) {
+      
+      SendEmail(email, "Wolfsrex-Sign Up", "You're receiving this message because of a successful sign-up.If you're aware of this sign-up, please disregard this notice.\n\nThanks,\n\nWolfsrex Team");
+
       seterrorcolor("green")
       seterror("✔ User created sucessfully.");
       router.push("/signin");

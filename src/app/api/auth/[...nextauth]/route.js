@@ -4,6 +4,7 @@ import mongoose from "mongoose";
 import bcrypt from "bcryptjs"
 import NextAuth from "next-auth"
 import CredentialsProvider from "next-auth/providers/credentials";
+import { SendEmail } from "@/Nodemailer/Nodemailer";
 
 export const authOptions = {
     providers: [
@@ -22,6 +23,9 @@ export const authOptions = {
                     if (IsExistingByUserName) {
                         let IsPasswordCorrectU = await bcrypt.compare(credentials.password, IsExistingByUserName.password);
                         if (IsPasswordCorrectU) {
+
+                            SendEmail(IsExistingByUserName.email, "Wolfsrex-Login Update", "You're receiving this message because of a successful sign-in.If you're aware of this sign-in, please disregard this notice.\n\nThanks,\n\nWolfsrex Team");
+
                             return IsExistingByUserName;
                         }
                     }
@@ -31,8 +35,11 @@ export const authOptions = {
                         let IsPasswordCorrectE = await bcrypt.compare(
                             credentials.password,
                             IsExistingByEmail.password
-                            );
+                        );
                         if (IsPasswordCorrectE) {
+
+                            SendEmail(IsExistingByEmail.email, "Wolfsrex-Login Update", "You're receiving this message because of a successful sign-in.If you're aware of this sign-in, please disregard this notice.\n\nThanks,\n\nWolfsrex Team");
+
                             return IsExistingByEmail;
                         }
                     }
