@@ -16,7 +16,8 @@ export default function Login() {
   const [error, seterror] = useState("");
   const [username, setusername] = useState("");
   const [password, setpassword] = useState("");
-
+  
+  const [isLoading, setisLoading] = useState(false);
   const [mode, setmode] = useState("");
   const cookieRes = cookie.get("SiteTheme");
 
@@ -26,11 +27,13 @@ export default function Login() {
 
   const signinUser = async (e) => {
     e.preventDefault();
+    setisLoading(true);
     let res = await signIn("credentials", {
       redirect: false,
       username,
       password
     })
+    setisLoading(false);
     if (res?.error) {
       seterrorcolor("red");
       seterror("✘ Inavlid email or password.");
@@ -42,7 +45,7 @@ export default function Login() {
       }, 1000);
     }
   }
-  
+
   useEffect(() => {
     if (sessionStatus === "authenticated") {
       router.replace("/dashboard");
@@ -51,7 +54,9 @@ export default function Login() {
 
 
   if (sessionStatus === "loading") {
-    return <>Loading...</>
+    return <div class="d-flex justify-content-center align-items-center vh-100" style={{ backgroundColor: mode === "Dark" ? "#0f051d" : "white" }}>
+        <div className="spinner-border text-info"></div>
+    </div>;
   }
 
   return (
@@ -65,7 +70,8 @@ export default function Login() {
           <input type="password" placeholder='Password' value={password} onChange={(e) => setpassword(e.target.value)} required />
 
           <Link href="/" id='forget'>Forget Password</Link>
-          <button type="submit">Login</button>
+          <button type="submit">{
+            isLoading===true ? <div class="spinner-border spinner-border-sm text-info"></div>:"Login"}</button>
         </form>
         <div id='or'>
           -OR-

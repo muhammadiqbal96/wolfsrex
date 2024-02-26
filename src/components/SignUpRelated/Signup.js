@@ -28,10 +28,11 @@ export default function Signup() {
   const [mobile_number, setmobile_number] = useState();
   const [password, setpassword] = useState();
 
-
+  const [isLoading, setisLoading] = useState(false);
 
   const RegisterUser = async (e) => {
     e.preventDefault();
+    setisLoading(true);
     let data = await fetch("/api/users", {
       method: "POST",
       body: JSON.stringify({
@@ -43,8 +44,9 @@ export default function Signup() {
       })
     });
     data = await data.json();
+    setisLoading(false)
     if (data.success === true) {
-      
+
       SendEmail(email, "Wolfsrex-Sign Up", "You're receiving this message because of a successful sign-up.If you're aware of this sign-up, please disregard this notice.\n\nThanks,\n\nWolfsrex Team");
 
       seterrorcolor("green")
@@ -64,7 +66,9 @@ export default function Signup() {
   }, [sessionStatus, router]);
 
   if (sessionStatus === "loading") {
-    return <>Loading...</>
+    return <div class="d-flex justify-content-center align-items-center vh-100" style={{ backgroundColor: mode === "Dark" ? "#0f051d" : "white" }}>
+      <div className="spinner-border"></div>
+    </div>;
   }
 
   return (
@@ -87,7 +91,9 @@ export default function Signup() {
           <input type="password" placeholder='Password' pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
             title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" value={password} onChange={(e) => setpassword(e.target.value)} required />
 
-          <button type="submit">Register</button>
+          <button type="submit">{
+            isLoading === true ? <div class="spinner-border spinner-border-sm text-info"></div> : "Register"
+          }</button>
         </form>
         <div id='or'>
           -OR-
