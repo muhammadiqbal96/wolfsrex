@@ -10,7 +10,7 @@ export default function Loader() {
         setmode(cookieRes)
     }, [cookieRes]);
 
-    return <div class="d-flex justify-content-center align-items-center vh-100" style={{ backgroundColor: mode === "Dark" ? "#0f051d" : "white" }}>
+    return <div className="d-flex justify-content-center align-items-center vh-100" style={{ backgroundColor: mode === "Dark" ? "#0f051d" : "white" }}>
         <div className="spinner-border text-info"></div>
     </div>;
 }

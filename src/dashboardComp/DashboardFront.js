@@ -21,7 +21,7 @@ export default function DashboardFront() {
     }
 
     if (sessionStatus === "loading") {
-        return <div class="d-flex justify-content-center align-items-center vh-100" style={{ backgroundColor: mode === "Dark" ? "#0f051d" : "white" }}>
+        return <div className="d-flex justify-content-center align-items-center vh-100" style={{ backgroundColor: mode === "Dark" ? "#0f051d" : "white" }}>
         <div className="spinner-border text-info"></div>
     </div>;
     }
