@@ -1,0 +1,220 @@
+.UpperNavbarOfDashboard {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 10px 30px;
+    background-color: #4D0D74;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.dashboardNavLogo span {
+    font-weight: bolder;
+    font-family: ubuntu;
+}
+
+.dashboardNavbtnUserCont {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.dashboardNavbtnUserCont button {
+    padding: 4px 8px;
+    font-size: 14px;
+    font-weight: bold;
+    background: #FA17FF;
+    color: white;
+    border: none;
+    border-radius: 7px;
+}
+
+.dashboardNavbtnUserCont div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dashboardNavbtnUserCont div span {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.dashboardNavbtnUserCont div img {
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.SideNavbarOfDashboard {
+    position: fixed;
+    top: 80px;
+    padding: 25px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #170A2B;
+    width: 100px;
+    transition: all 0.7s;
+}
+
+.SideNavbarOfDashboard ul {
+    margin-left: -35px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 23px;
+}
+
+.SideNavbarOfDashboard ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.SideNavbarOfDashboard ul li button {
+    border: none;
+    background: transparent;
+    color: white;
+}
+
+.SideNavbarOfDashboard ul li i {
+    font-size: 17px;
+    color: #6563FF;
+}
+
+.SideNavbarOfDashboard ul li .material-symbols-outlined {
+    font-size: 22px;
+    color: #6563FF;
+}
+
+.SideNavbarOfDashboard ul li a,
+.SideNavbarOfDashboard ul li button {
+    font-size: 10px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.SideNavbarOfDashboard .sidenavbarcontroller {
+    visibility: hidden;
+    background: rgba(255, 255, 255, 0.096);
+    color: gray;
+    border: none;
+    font-size: 18px;
+    font-weight: bolder;
+    border-radius: 25px;
+    padding: 6px 15px 10px 15px;
+    text-align: center;
+    transition: all 0.4s;
+}
+
+.SideNavbarOfDashboard .sidenavbarcontroller:hover {
+    background: rgba(255, 255, 255, 0.185);
+}
+
+.side_Nav_Opener {
+    position: fixed;
+    top: 80px;
+    background-color: #170A2B;
+    color: white;
+    padding: 4px 3.3px;
+    font-size: 15px;
+    font-weight: bolder;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.navEleOptions {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #4D0D74;
+    padding: 10px;
+    border-radius: 10px;
+    transition: left 0.7s ease-in-out;
+}
+
+.navEleOptions a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.navEleOptions a:hover {
+    background: white;
+    color: black;
+}
+
+@media only screen and (max-width: 800px) {
+    .UpperNavbarOfDashboard {
+        padding: 10px 10px;
+    }
+
+    .dashboardNavLogo span {
+        display: none;
+    }
+
+    .dashboardNavbtnUserCont {
+        gap: 20px;
+    }
+
+    .dashboardNavbtnUserCont div {
+        gap: 5px;
+    }
+
+    .dashboardNavbtnUserCont div span {
+        font-size: 13px;
+    }
+
+    .dashboardNavbtnUserCont button {
+        padding: 3px 6px;
+        font-size: 12px;
+    }
+
+}
+
+@media only screen and (max-width: 850px) {
+    .SideNavbarOfDashboard {
+        left: -100px;
+    }
+
+    .SideNavbarOfDashboard .sidenavbarcontroller {
+        visibility: visible;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .dashboardNavbtnUserCont {
+        gap: 15px;
+    }
+
+    .dashboardNavbtnUserCont div span {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .dashboardNavbtnUserCont {
+        gap: 10px;
+    }
+
+    .UpperNavbarOfDashboard {
+        padding: 10px 5px;
+    }
+
+    .dashboardNavbtnUserCont button {
+        padding: 3px 7px;
+        font-size: 10px;
+        font-weight: 500;
+    }
+}

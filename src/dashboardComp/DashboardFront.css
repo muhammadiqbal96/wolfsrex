@@ -1,0 +1,511 @@
+.DasboardOuterDiv {
+    padding-top: 130px;
+    padding-left: 120px;
+    padding-right: 30px;
+    margin-bottom: -8px;
+    padding-bottom: 70px;
+    background-color: #0f051d;
+    color: white;
+}
+
+.dashboardWelcome {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dashboardWelcome h3 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.dashboardWelcome h3:nth-child(1) span {
+    font-weight: 500;
+    font-size: 28px;
+    font-family: s;
+}
+
+.dashboardWelcome h3:nth-child(2) {
+    padding-right: 2px;
+    background: -webkit-linear-gradient(rgb(188, 12, 241), rgb(212, 4, 4));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: ubuntu;
+    font-style: oblique;
+}
+
+.boxesContainer {
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    row-gap: 30px;
+    margin-block: 70px;
+}
+
+.boxesContainer .box {
+    display: flex;
+    width: 300px;
+    height: 130px;
+    justify-content: space-around;
+    align-items: center;
+    border: 5px solid rgba(128, 128, 128, 0.123);
+    border-radius: 10px;
+    background-color: rgba(245, 222, 179, 0.082);
+}
+
+.boxesContainer .box:nth-child(7),
+.boxesContainer .box:nth-child(8) {
+    margin-left: 180px;
+}
+
+.boxesContainer .box h5:nth-child(1) {
+    width: 140px;
+    font-weight: 700;
+    font-size: 22px;
+    background-color: #f3ec78;
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+    background-size: 100%;
+    background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.boxesContainer2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.boxesContainer2 .box3 {
+    padding-inline: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    width: 380px;
+    height: 150px;
+}
+
+.boxesContainer2 .box3:nth-child(1) {
+    background-color: #6a248d;
+}
+
+.boxesContainer2 .box3:nth-child(2) {
+    background-color: #f3f3f315;
+    border: 3px solid #339146;
+}
+
+.boxesContainer2 .box3:nth-child(3) {
+    background-color: #f3f3f315;
+    border: 3px solid #209CE1;
+}
+
+.boxesContainer2 .box3 div h5:nth-child(1) {
+    font-size: 14px;
+}
+
+.boxesContainer2 .box3 div h5:nth-child(2) {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.pacakgeActivity {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pacakgeActivity div:nth-child(1) {
+    background-color: #f3f3f315;
+}
+
+.pacakgeActivity div:nth-child(1) img {
+    width: 250px;
+    height: 250px;
+}
+
+.pacakgeActivity div {
+    padding: 30px;
+    width: 500px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pacakgeActivity div:nth-child(2) {
+    background-color: #6a248d;
+    justify-content: space-evenly;
+}
+
+.pacakgeActivity div:nth-child(2) section {
+    display: flex;
+}
+
+.pacakgeActivity div:nth-child(2) section h6:nth-child(1) {
+    padding-right: 100px;
+}
+
+.pacakgeActivity div:nth-child(2) section h6 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.pacakgeActivity div:nth-child(2) section h6 span {
+    border-bottom: 2px solid rgba(19, 18, 18, 0.336);
+}
+
+.WithdrawlsTeamGroupBox {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.WithdrawlsTeamGroupBox div {
+    background-color: #f3f3f315;
+    padding: 20px;
+    width: 350px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.WithdrawlsTeamGroupBox div h4 {
+    text-align: center;
+}
+
+.WithdrawlsTeamGroupBox div section {
+    margin-top: 10px;
+    background-color: #acabab6c;
+    padding: 10px 10px 1px 10px;
+}
+
+.WithdrawlsTeamGroupBox div h6:nth-child(1) {
+    padding-bottom: 8px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.418);
+}
+
+.WithdrawlsTeamGroupBox div h6 {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 1320px) {
+    .boxesContainer2 .box3 {
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 1230px) {
+    .boxesContainer2 .box3 {
+        width: 320px;
+    }
+
+    .boxesContainer {
+        margin-right: -50px;
+    }
+
+    .WithdrawlsTeamGroupBox div {
+        width: 320px;
+    }
+}
+
+@media only screen and (max-width: 1180px) {
+    .boxesContainer2 .box3 {
+        width: 300px;
+        height: 140px;
+    }
+
+    .pacakgeActivity div {
+        padding: 30px;
+        width: 400px;
+    }
+
+    .WithdrawlsTeamGroupBox div {
+        padding: 15px;
+        width: 300px;
+        height: 140px;
+    }
+}
+
+@media only screen and (max-width: 1130px) {
+    .boxesContainer {
+        grid-template-columns: 320px 320px 320px;
+        row-gap: 30px;
+        margin-right: -20px;
+    }
+}
+
+@media only screen and (max-width: 1070px) {
+    .boxesContainer {
+        grid-template-columns: 370px 370px;
+        row-gap: 30px;
+        margin-right: -20px;
+    }
+
+    .boxesContainer .box {
+        width: 350px;
+        height: 130px;
+    }
+
+    .boxesContainer .box:nth-child(7),
+    .boxesContainer .box:nth-child(8) {
+        margin-left: 0px;
+    }
+
+    .boxesContainer2 {
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .boxesContainer2 .box3 {
+        width: 380px;
+        height: 150px;
+    }
+
+    .WithdrawlsTeamGroupBox {
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .WithdrawlsTeamGroupBox div {
+        width: 350px;
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 986px) {
+    .pacakgeActivity div {
+        padding: 30px;
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 940px) {
+    .boxesContainer2 .box3 {
+        width: 300px;
+        height: 140px;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .WithdrawlsTeamGroupBox div {
+        padding: 15px;
+        width: 300px;
+        height: 140px;
+    }
+
+    .pacakgeActivity h4 {
+        font-size: 20px;
+    }
+
+    .pacakgeActivity div {
+        width: 320px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .DasboardOuterDiv {
+        padding-top: 130px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .pacakgeActivity div {
+        padding: 30px;
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 765px) {
+    .pacakgeActivity {
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+    .PackageStatus h4 {
+        font-size: 27px;
+    }
+    .PackageStatus{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .pacakgeActivity div {
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .dashboardWelcome h3 {
+        font-size: 35px;
+    }
+
+    .dashboardWelcome h3:nth-child(1) span {
+        font-size: 24px;
+    }
+
+    .boxesContainer {
+        grid-template-columns: 320px 320px;
+    }
+
+    .boxesContainer .box {
+        width: 300px;
+        height: 130px;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    .dashboardWelcome h3 {
+        font-size: 30px;
+    }
+
+    .dashboardWelcome h3:nth-child(1) span {
+        font-size: 22px;
+    }
+
+    .boxesContainer {
+        display: block;
+        margin-block: 30px;
+        margin-right: 0px;
+    }
+
+    .boxesContainer .box {
+        margin-block: 20px;
+        width: 500px;
+        height: 130px;
+    }
+
+    .boxesContainer2 .box3 {
+        width: 500px;
+        height: 150px;
+    }
+
+    .WithdrawlsTeamGroupBox div {
+        width: 500px;
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .dashboardWelcome h3 {
+        font-size: 25px;
+    }
+
+    .dashboardWelcome h3:nth-child(1) span {
+        font-size: 18px;
+    }
+
+    .boxesContainer .box {
+        margin-block: 20px;
+        width: 400px;
+        height: 130px;
+    }
+
+    .boxesContainer2 .box3 {
+        width: 400px;
+        height: 150px;
+    }
+
+    .pacakgeActivity div {
+        width: 400px;
+    }
+
+    .WithdrawlsTeamGroupBox div {
+        width: 400px;
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .dashboardWelcome h3 {
+        font-size: 22px;
+    }
+
+    .dashboardWelcome h3:nth-child(1) span {
+        font-size: 16px;
+    }
+
+    .boxesContainer .box {
+        margin-block: 20px;
+        width: 350px;
+        height: 130px;
+    }
+
+    .boxesContainer2 .box3 {
+        width: 350px;
+        height: 150px;
+    }
+    .PackageStatus h4 {
+        font-size: 25px;
+    }
+    .pacakgeActivity div {
+        width: 350px;
+    }
+
+    .WithdrawlsTeamGroupBox div {
+        width: 350px;
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .dashboardWelcome h3 {
+        font-size: 19px;
+    }
+
+    .dashboardWelcome h3:nth-child(1) span {
+        font-size: 14px;
+    }
+
+    .boxesContainer .box {
+        margin-block: 20px;
+        width: 320px;
+        height: 130px;
+    }
+
+    .boxesContainer2 .box3 {
+        width: 320px;
+        height: 150px;
+    }
+    .PackageStatus h4 {
+        font-size: 20px;
+    }
+    .pacakgeActivity div {
+        width: 320px;
+    }
+
+    .WithdrawlsTeamGroupBox div {
+        width: 320px;
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .dashboardWelcome h3 {
+        font-size: 18px;
+    }
+
+    .boxesContainer .box {
+        margin-block: 20px;
+        width: 300px;
+        height: 130px;
+    }
+
+    .boxesContainer2 .box3 {
+        width: 300px;
+        height: 150px;
+    }
+
+    .pacakgeActivity div {
+        width: 300px;
+    }
+
+    .WithdrawlsTeamGroupBox div {
+        width: 300px;
+        height: 150px;
+    }
+}

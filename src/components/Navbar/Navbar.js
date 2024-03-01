@@ -4,7 +4,7 @@ import './style.css'
 import { useState } from "react"
 import { useRouter } from "next/navigation"
 import { useSession } from "next-auth/react"
-import { signOut } from "next-auth/react"
+import { signOut } from "next-auth/react";
 export default function Navbar({ mode }) {
     const { data: session, status: sessionStatus } = useSession();
     const router = useRouter();
