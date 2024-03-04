@@ -1,0 +1,253 @@
+.DepsoiteOuterDiv {
+    padding-top: 130px;
+    padding-left: 120px;
+    padding-right: 30px;
+    margin-bottom: -8px;
+    padding-bottom: 70px;
+    background-color: #0f051d;
+    color: white;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.DepsoiteOuterDiv div p {
+    font-size: 14px;
+}
+
+.cardContainer {
+    align-self: center;
+    margin-right: -10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
+
+.PackageCard {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(128, 128, 128, 0.397);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: rgba(255, 255, 255, 0.041);
+    width: 250px;
+}
+
+.PackageCard img {
+    margin-bottom: -15px;
+}
+
+.PackageCard button {
+    border: none;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(77, 13, 116);
+    font-size: smaller;
+    padding: 8px 40px;
+}
+
+.PackageCard button:hover {
+    background-color: rgba(77, 13, 116, 0.637);
+}
+
+@media only screen and (max-width: 1250px) {
+    .cardContainer {
+        grid-gap: 25px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .cardContainer {
+        grid-gap: 30px;
+    }
+
+    .PackageCard {
+        width: 220px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .cardContainer {
+        grid-gap: 25px;
+    }
+
+    .PackageCard {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .cardContainer {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+    }
+
+    .PackageCard {
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    .cardContainer {
+        grid-gap: 25px;
+    }
+
+    .PackageCard {
+        width: 230px;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .cardContainer {
+        grid-gap: 20px;
+    }
+
+    .PackageCard {
+        width: 220px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .DepsoiteOuterDiv {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .DepsoiteOuterDiv div p {
+        font-size: 12px;
+    }
+
+    .cardContainer {
+        margin-right: 0px;
+        grid-gap: 30px;
+    }
+
+    .PackageCard {
+        width: 230px;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .cardContainer {
+        grid-gap: 20px;
+    }
+
+    .PackageCard {
+        width: 215px;
+    }
+}
+
+@media only screen and (max-width: 695px) {
+    .cardContainer {
+        grid-gap: 18px;
+    }
+
+    .PackageCard {
+        width: 210px;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    .cardContainer {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+    }
+
+    .PackageCard {
+        width: 270px;
+    }
+}
+
+@media only screen and (max-width: 610px) {
+    .cardContainer {
+        grid-gap: 20px;
+    }
+
+    .PackageCard {
+        width: 260px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .PackageCard {
+        width: 240px;
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    .cardContainer {
+        grid-gap: 16px;
+    }
+
+    .DepsoiteOuterDiv div p {
+        font-size: x-small;
+    }
+    .PackageCard {
+        width: 230px;
+    }
+}
+
+@media only screen and (max-width: 488px) {
+    .cardContainer {
+        grid-gap: 14px;
+    }
+
+    .PackageCard {
+        width: 220px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .PackageCard {
+        width: 210px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .PackageCard {
+        width: 210px;
+    }
+
+    .PackageCard button {
+        padding: 6px 30px;
+    }
+}
+
+@media only screen and (max-width: 442px) {
+    .cardContainer {
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+    }
+
+    .PackageCard {
+        width: 350px;
+    }
+
+    .PackageCard button {
+        padding: 8px 40px;
+    }
+}
+
+@media only screen and (max-width: 378px) {
+    .PackageCard {
+        width: 320px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .PackageCard {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .PackageCard {
+        width: 250px;
+    }
+}

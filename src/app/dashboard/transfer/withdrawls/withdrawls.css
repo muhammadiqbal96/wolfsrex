@@ -1,0 +1,27 @@
+.WithdrawlsOuterDiv {
+    padding-top: 130px;
+    padding-left: 120px;
+    padding-right: 30px;
+    margin-bottom: -8px;
+    padding-bottom: 70px;
+    background-color: #0f051d;
+    color: white;
+}
+.WithdrawlsOuterDiv div p {
+    font-size: 14px;
+}
+@media only screen and (max-width: 850px) {
+    .WithdrawlsOuterDiv {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .WithdrawlsOuterDiv div p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    .WithdrawlsOuterDiv div p {
+        font-size: x-small;
+    }
+}

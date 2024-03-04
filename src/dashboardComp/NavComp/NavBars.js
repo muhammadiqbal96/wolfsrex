@@ -2,42 +2,41 @@
 import Image from "next/image";
 import Link from "next/link";
 import "./dashboardNav.css"
-import { useEffect, useState } from "react";
-import { useSession } from "next-auth/react";
+import { useState } from "react";
 import { signOut } from "next-auth/react";
 
 export default function NavBars() {
     const [left, setleft] = useState();
 
-    const [transferOptionsleft, settransferOptionsleft] = useState("-170px");
-    const [networkOptionsleft, setnetworkOptionsleft] = useState("-170px");
-    const [summaryOptionsleft, setsummaryOptionsleft] = useState("-170px");
-    const [supportOptionsleft, setsupportOptionsleft] = useState("-170px");
+    const [transferOptionsleft, settransferOptionsleft] = useState("-200px");
+    const [networkOptionsleft, setnetworkOptionsleft] = useState("-200px");
+    const [summaryOptionsleft, setsummaryOptionsleft] = useState("-200px");
+    const [supportOptionsleft, setsupportOptionsleft] = useState("-200px");
 
     const hideAllOptions = () => {
-        settransferOptionsleft("-170px");
-        setnetworkOptionsleft("-170px");
-        setsummaryOptionsleft("-170px");
-        setsupportOptionsleft("-170px");
+        settransferOptionsleft("-200px");
+        setnetworkOptionsleft("-200px");
+        setsummaryOptionsleft("-200px");
+        setsupportOptionsleft("-200px");
     }
 
+    const links = document.getElementsByTagName("a");
+    Array.from(links).forEach((e) => {
+        e.addEventListener("click", hideAllOptions);
+    });
+    
     const showOptions = (value, setValue) => {
 
-        if (value === "-170px") {
+        if (value === "-200px") {
             hideAllOptions();
             setValue("105px");
         } else {
-            setValue("-170px");
+            setValue("-200px");
         }
-    }
-    const { data: session, status: sessionStatus } = useSession();
-
-    if (sessionStatus === "loading") {
-        return <div style={{ background: "white" }}></div>
     }
 
     return (
-        sessionStatus === "authenticated" && (<div>
+        <div>
 
             <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
@@ -64,8 +63,8 @@ export default function NavBars() {
             </div>
 
             <div className="transferOptions navEleOptions" style={{ top: "140px", left: transferOptionsleft }}>
-                <Link href="/">Withdrawals</Link>
-                <Link href="/">Deposit</Link>
+                <Link href="/dashboard/transfer/withdrawls">Withdrawals</Link>
+                <Link href="/dashboard/transfer/deposite">Deposit</Link>
             </div>
 
             <div className="networkOptions navEleOptions" style={{ top: "199px", left: networkOptionsleft }}>
@@ -91,7 +90,7 @@ export default function NavBars() {
 
                 <ul>
 
-                    <li><Link href="/">
+                    <li><Link href="/dashboard">
                         <span className="material-symbols-outlined">dashboard_customize</span>
                         <span>Dashboard</span>
                     </Link></li>
@@ -135,6 +134,6 @@ export default function NavBars() {
                 <hr style={{ background: "gray", height: "2.5px", width: "90%", marginTop: "-0px" }} />
                 <button className="sidenavbarcontroller" id="sidenavbarcontroller" onClick={() => { setleft("-100px"); hideAllOptions(); }}>&lt;</button>
             </nav>
-        </div>)
+        </div>
     )
 }
