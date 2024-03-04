@@ -2,8 +2,7 @@
 import Link from "next/link"
 import "./deposite.css"
 import { useRouter } from "next/navigation"
-export default function page() {
-
+export default function Page() {
   const router = useRouter();
   const PackageArray = [
     {
@@ -78,11 +77,11 @@ export default function page() {
         {
           PackageArray.map((item) => {
             return (
-              <div className="PackageCard">
+              <div className="PackageCard" key={`${item.title}&${item.price}`}>
                 <img src={item.img} alt="loading" width={140} height={140} />
                 <h4>{item.title}</h4>
                 <h4>{item.price}</h4>
-                <button onClick={()=>router.push(`/dashboard/transfer/deposite/${item.title}&${item.price}`)}>Purchase</button>
+                <button onClick={() => router.push(`/dashboard/transfer/deposite/${item.title}&${item.price}`)}>Purchase</button>
               </div>
             )
           })

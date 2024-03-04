@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import "./dashboardNav.css"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { signOut } from "next-auth/react";
 
 export default function NavBars() {
@@ -19,12 +19,14 @@ export default function NavBars() {
         setsummaryOptionsleft("-200px");
         setsupportOptionsleft("-200px");
     }
-
-    const links = document.getElementsByTagName("a");
-    Array.from(links).forEach((e) => {
-        e.addEventListener("click", hideAllOptions);
-    });
     
+    useEffect(() => {
+        const links = document.getElementsByTagName("a");
+        Array.from(links).forEach((e) => {
+            e.addEventListener("click", hideAllOptions);
+        });
+    }, [])
+
     const showOptions = (value, setValue) => {
 
         if (value === "-200px") {
