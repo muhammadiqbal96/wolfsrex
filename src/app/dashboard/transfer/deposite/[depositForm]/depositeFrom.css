@@ -1,0 +1,214 @@
+.DepositeFormOutterDiv {
+    padding-top: 130px;
+    padding-left: 120px;
+    padding-right: 30px;
+    margin-bottom: -8px;
+    padding-bottom: 70px;
+    background-color: #0f051d;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.DepositeFormOutterDiv .FormContainerOfDeposite {
+    width: 550px;
+    background-color: rgba(233, 232, 232, 0.082);
+    font-family: ubuntu;
+    border-radius: 10px;
+}
+
+.DepositeFormOutterDiv .FormContainerOfDeposite>h2 {
+    border-radius: 10px 10px 0px 0px;
+    padding: 15px 0px;
+    background-color: white;
+    color: black;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.DepositeFormOutterDiv .FormContainerOfDeposite .FormDetailsOfDeposite {
+    padding: 0px 40px;
+}
+
+.DepositeFormOutterDiv .FormContainerOfDeposite .FormDetailsOfDeposite p {
+    margin-top: 35px;
+}
+
+.DepositeFormOutterDiv .FormContainerOfDeposite .FormDetailsOfDeposite p>button {
+    margin-left: 5px;
+    padding: 4px 8px;
+    border: none;
+    font-size: small;
+    font-weight: 600;
+    background-color: rgb(77, 13, 116);
+    color: white;
+    border-radius: 4px;
+    margin-block: 15px;
+}
+
+.DepositeFormOutterDiv .FormContainerOfDeposite .FormDetailsOfDeposite .ToDateCont div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.DepositeFormOutterDiv .FormContainerOfDeposite .FormDetailsOfDeposite .PackageDetails {
+    display: flex;
+    justify-content: space-between;
+}
+
+.DepositeFormOutterDiv .FormContainerOfDeposite .FormDetailsOfDeposite .PackageDetails>div>p {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.DepositeFormOutterDiv .FormContainerOfDeposite .FormDetailsOfDeposite .SedndingAdress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.DepositeFormOutterDiv .FormContainerOfDeposite .FormDetailsOfDeposite .SedndingAdress>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.DepositeFormOutterDiv .FormContainerOfDeposite .FormDetailsOfDeposite .bankDetails {
+    margin-block: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.DepositeFormOutterDiv .FormContainerOfDeposite .FormDetailsOfDeposite form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    gap: 3px;
+}
+
+.DepositeFormOutterDiv .FormContainerOfDeposite .FormDetailsOfDeposite form label {
+    font-size: 14px
+}
+
+.DepositeFormOutterDiv .FormContainerOfDeposite .FormDetailsOfDeposite form input {
+    background: rgba(0, 0, 0, 0.356);
+    border: none;
+    border-radius: 5px;
+}
+
+.DepositeFormOutterDiv .FormContainerOfDeposite .FormDetailsOfDeposite form input[placeholder] {
+    padding: 9px;
+    color: white;
+}
+
+.DepositeFormOutterDiv .FormContainerOfDeposite .FormDetailsOfDeposite form button {
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 0px;
+    background-color: rgb(77, 13, 116);
+    color: white;
+}
+
+.DepositeFormOutterDiv .FormContainerOfDeposite .FormDetailsOfDeposite form button:hover {
+    background-color: purple;
+}
+
+@media only screen and (max-width: 850px) {
+    .DepositeFormOutterDiv {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 495px) {
+    .DepositeFormOutterDiv {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .DepositeFormOutterDiv .FormContainerOfDeposite .FormDetailsOfDeposite .SedndingAdress>p {
+        font-size: 14px;
+    }
+
+    .DepositeFormOutterDiv .FormContainerOfDeposite .FormDetailsOfDeposite form label {
+        font-size: 12px
+    }
+}
+
+@media only screen and (max-width: 438px) {
+    .DepositeFormOutterDiv .FormContainerOfDeposite {
+        width: 400px;
+    }
+
+    .DepositeFormOutterDiv .FormContainerOfDeposite .FormDetailsOfDeposite p {
+        margin-top: 25px;
+        font-size: 14px;
+    }
+
+    .DepositeFormOutterDiv .FormContainerOfDeposite .FormDetailsOfDeposite p>button {
+        margin-left: 4px;
+        padding: 3px 6.5px;
+    }
+
+    .DepositeFormOutterDiv .FormContainerOfDeposite .FormDetailsOfDeposite .SedndingAdress>p {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .DepositeFormOutterDiv .FormContainerOfDeposite {
+        width: 400px;
+    }
+
+    .DepositeFormOutterDiv .FormContainerOfDeposite>h2 {
+        padding: 10px 0px;
+    }
+
+    .DepositeFormOutterDiv .FormContainerOfDeposite .FormDetailsOfDeposite {
+        padding: 0px 20px;
+    }
+
+    .DepositeFormOutterDiv .FormContainerOfDeposite .FormDetailsOfDeposite .PackageDetails div h6 {
+        font-size: 16px;
+    }
+
+    .DepositeFormOutterDiv .FormContainerOfDeposite .FormDetailsOfDeposite p {
+        font-size: 14px;
+    }
+
+    .DepositeFormOutterDiv .FormContainerOfDeposite .FormDetailsOfDeposite .SedndingAdress>p {
+        font-size: 13px;
+    }
+
+    .DepositeFormOutterDiv .FormContainerOfDeposite .FormDetailsOfDeposite .SedndingAdress>div>h4 {
+        font-size: 19px;
+    }
+
+    .DepositeFormOutterDiv .FormContainerOfDeposite .FormDetailsOfDeposite .SedndingAdress>div>h6 {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .DepositeFormOutterDiv .FormContainerOfDeposite .FormDetailsOfDeposite {
+        padding: 0px 10px;
+    }
+    .DepositeFormOutterDiv .FormContainerOfDeposite .FormDetailsOfDeposite p {
+        margin-top: 20px;
+        font-size: 13px;
+    }
+    .DepositeFormOutterDiv .FormContainerOfDeposite .FormDetailsOfDeposite p>button {
+        margin-left: 2px;
+        padding: 3px 6px;
+    }
+    .DepositeFormOutterDiv .FormContainerOfDeposite .FormDetailsOfDeposite .SedndingAdress>div>h6 {
+        font-size: 14px;
+    }
+}

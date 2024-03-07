@@ -48,22 +48,22 @@ export default function Page() {
     {
       img: "/package/6.png",
       title: "Nihonium",
-      price: "$4,081"
+      price: "$4081"
     },
     {
       img: "/package/7.png",
       title: "Platinum",
-      price: "$10,204"
+      price: "$10204"
     },
     {
       img: "/package/12.png",
       title: "Titanium",
-      price: "$20,408"
+      price: "$20408"
     },
     {
       img: "/package/2.png",
       title: "Gold",
-      price: "$40,816"
+      price: "$40816"
     }
   ]
   return (

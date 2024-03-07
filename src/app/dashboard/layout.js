@@ -7,7 +7,7 @@ export default async function layout({ children }) {
   const session = await getServerSession();
 
   if (session === null) {
-    redirect("/signin")
+    redirect("/signin");
   }
 
   if (session === "loading") {
