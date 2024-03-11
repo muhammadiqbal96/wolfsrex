@@ -4,8 +4,11 @@ import Link from "next/link";
 import "./dashboardNav.css"
 import { useEffect, useState } from "react";
 import { signOut } from "next-auth/react";
+import { useRouter } from "next/navigation";
 
 export default function NavBars() {
+    const router = useRouter();
+
     const [left, setleft] = useState();
 
     const [transferOptionsleft, settransferOptionsleft] = useState("-200px");
@@ -50,10 +53,10 @@ export default function NavBars() {
                 </div>
 
                 <div className="dashboardNavbtnUserCont">
-                    <button>Add Funds</button>
+                    <button onClick={()=>router.push("/dashboard/transfer/deposite")}>Add Funds</button>
                     <div>
                         <span className="userNText">iqbaljutt96</span>
-                        <Image src="/collections/01.jpg" alt="Profile" width={34} height={34} />
+                        <Image src="/collections/01.jpg" alt="Profile" width={34} height={34} onClick={()=>router.push("/dashboard/profile")}/>
                     </div>
                 </div>
 
@@ -116,7 +119,7 @@ export default function NavBars() {
                     </button>
                     </li>
 
-                    <li><Link href="/">
+                    <li><Link href="/dashboard/kyc">
                         <span className="material-symbols-outlined">photo_library</span>
                         <span>KYC</span>
                     </Link></li>

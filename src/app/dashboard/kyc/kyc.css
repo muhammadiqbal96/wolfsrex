@@ -1,0 +1,84 @@
+.kycOuterDiv {
+    padding-top: 130px;
+    padding-left: 120px;
+    padding-right: 30px;
+    margin-bottom: -8px;
+    padding-bottom: 70px;
+    background-color: #0f051d;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.kycOuterDiv form {
+    background-color: #112428;
+    padding: 15px;
+    border-radius: 9px;
+}
+
+.kycOuterDiv form input {
+    background-color: #6C7B7E;
+}
+
+.kycOuterDiv form input[placeholder] {
+    color: black;
+}
+
+.kycOuterDiv form input::placeholder {
+    color: rgba(0, 0, 0, 0.568);
+}
+.kycOuterDiv form small {
+    font-size: small;
+}
+.kycOuterDiv form button{
+background: #4D0D74;
+}
+.kycOuterDiv form button:hover {
+    background-color: #4d0d74a2;
+}
+@media only screen and (max-width: 850px) {
+    .kycOuterDiv {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .kycOuterDiv form label {
+        font-size: 15px;
+    }
+    .kycOuterDiv form small {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .kycOuterDiv form label {
+        font-size: 14px;
+    }
+    .kycOuterDiv form small {
+        font-size: 11px;
+    }
+    .kycOuterDiv form input {
+        font-size: small;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .kycOuterDiv form label {
+        font-size: 13px;
+    }
+    .kycOuterDiv form small {
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 370px) {
+    .kycOuterDiv form label {
+        font-size: 12px;
+    }
+    .kycOuterDiv form small {
+        font-size: 9px;
+    }
+    .kycOuterDiv form input {
+        font-size: x-small;
+    }
+}

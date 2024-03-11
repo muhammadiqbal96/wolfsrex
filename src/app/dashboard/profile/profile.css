@@ -1,0 +1,108 @@
+.profileOuterDiv {
+    z-index: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.profileOuterDiv .main-body {
+    padding-top: 130px;
+    padding-left: 120px;
+    padding-right: 30px;
+    margin-bottom: -8px;
+    padding-bottom: 70px;
+    background-color: #0f051d;
+    z-index: 0;
+}
+
+.profileOuterDiv .main-body .card {
+    padding: 2px;
+    margin-bottom: 10px;
+}
+
+.profileOuterDiv .main-body .card .card-body {
+    border-radius: 5px;
+    background-color: #112428;
+    color: white;
+}
+
+.profileOuterDiv .main-body .card .card-body input {
+    background-color: #6C7B7E;
+}
+
+.profileOuterDiv .main-body .card .card-body input[placeholder] {
+    color: black;
+}
+
+.profileOuterDiv .main-body .card .card-body input::placeholder {
+    color: rgba(0, 0, 0, 0.568);
+}
+
+.profileOuterDiv .main-body .card .card-body input[type="submit"],
+#inputGroupFileAddon04 {
+    background-color: #4D0D74;
+    border: none;
+}
+
+.profileOuterDiv .main-body .card .card-body input[type="submit"]:hover,
+#inputGroupFileAddon04:hover {
+    background-color: #4d0d74a2;
+}
+
+#uploadDiv input {
+    color: black;
+}
+
+#uploadBoxUl {
+    border-radius: 5px;
+    background-color: #6C7B7E;
+}
+
+#uploadBoxUl li {
+    background: transparent;
+    color: white;
+}
+
+#tabe-list>li>a{
+    background-color: #4D0D74;
+    color: white;
+}
+
+@media only screen and (max-width: 850px) {
+    .profileOuterDiv .main-body {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media only screen and (max-width: 580px) {
+    .profileOuterDiv .main-body .card .card-body input  {
+        margin-bottom: 3px;
+    }
+}
+@media only screen and (max-width: 380px) {
+    #UserNameText{
+        font-size: 19px;
+    }
+    #tabe-list>li>a{
+        font-size: 16px;
+    }
+    .profileOuterDiv .main-body .card h6 {
+        font-size: 15px;
+    }
+    #inputGroupFile04{
+        font-size: 12px;
+    }
+    #uploadBoxUl li span{
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 360px) {
+    .profileOuterDiv .main-body .card h6 {
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 340px) {
+    #inputGroupFile04{
+        font-size: 10px;
+    }
+}

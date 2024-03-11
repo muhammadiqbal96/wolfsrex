@@ -6,22 +6,127 @@
     padding-bottom: 70px;
     background-color: #0f051d;
     color: white;
+    display: flex;
+    flex-direction: column;
 }
+
 .WithdrawlsOuterDiv div p {
     font-size: 14px;
 }
+
+.WithdrawlsOuterDiv .WithddrawlsFormContainer {
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.356);
+    background-color: rgba(233, 232, 232, 0.082);
+    justify-self: center;
+    align-self: center;
+    border-radius: 8px;
+}
+
+.WithdrawlsOuterDiv .WithddrawlsFormContainer>form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.WithdrawlsOuterDiv .WithddrawlsFormContainer>form>label {
+    margin-top: 15px;
+}
+.WithdrawlsOuterDiv .WithddrawlsFormContainer>form label {
+    font-size: 14px;
+    font-family: monospace;
+}
+
+.WithdrawlsOuterDiv .WithddrawlsFormContainer>form input {
+    width: 100%;
+    height: 35px;
+    background-color: rgba(5, 5, 5, 0.39);
+    border: none;
+    border-radius: 5px;
+}
+
+.WithdrawlsOuterDiv .WithddrawlsFormContainer>form input[placeholder] {
+    padding: 1px 5px;
+    color: white;
+    font-family: monospace;
+}
+
+.WithdrawlsOuterDiv .WithddrawlsFormContainer>form>div {
+    margin-top: 40px;
+}
+
+.WithdrawlsOuterDiv .WithddrawlsFormContainer>form>div>p>button {
+    padding: 2px 4px 0px 4px;
+    border: none;
+    border-radius: 5px;
+    font-size: smaller;
+    font-weight: bold;
+    color: rgba(0, 0, 255, 0.76);
+    transition: transform 1s;
+}
+.WithdrawlsOuterDiv .WithddrawlsFormContainer>form>div>p>button:hover {
+    transform: scale(1.09);
+}
+.WithdrawlsOuterDiv .WithddrawlsFormContainer>form>div>button {
+    margin-top: 10px;
+    padding: 4px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    background-color: rgb(76, 108, 212);
+}
+.WithdrawlsOuterDiv .WithddrawlsFormContainer>form>div>button:hover {
+    background-color: rgba(76, 108, 212, 0.637);
+}
+.WithdrawlsOuterDiv .WithddrawlsFormContainer>form>button{
+    margin-top: 40px;
+    background-color: rgb(77, 13, 116);
+    color: white;
+    padding: 5px ;
+    border-radius: 5px;
+    border: 2px solid rgba(142, 74, 187, 0.623);
+    font-weight: 600;
+    font-family: monospace;
+}
+.WithdrawlsOuterDiv .WithddrawlsFormContainer>form>button:hover{
+    background-color: rgb(53, 6, 82);
+}
+
+
 @media only screen and (max-width: 850px) {
     .WithdrawlsOuterDiv {
         padding-left: 20px;
         padding-right: 20px;
     }
+
     .WithdrawlsOuterDiv div p {
         font-size: 14px;
     }
 }
 
 @media only screen and (max-width: 510px) {
-    .WithdrawlsOuterDiv div p {
+    .WithdrawlsOuterDiv div:nth-child(1) p {
         font-size: x-small;
+    }
+    .WithdrawlsOuterDiv .WithddrawlsFormContainer p {
+        font-size: small;
+    }
+    .WithdrawlsOuterDiv .WithddrawlsFormContainer>form label {
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .WithdrawlsOuterDiv .WithddrawlsFormContainer p {
+        font-size: 11px;
+    }
+    .WithdrawlsOuterDiv .WithddrawlsFormContainer>form label {
+        font-size: 12px;
+    }
+    .WithdrawlsOuterDiv .WithddrawlsFormContainer>form>div>button {
+        font-size: 13px;
+    }
+    .WithdrawlsOuterDiv .WithddrawlsFormContainer>form>button {
+        font-size: 14px;
     }
 }
