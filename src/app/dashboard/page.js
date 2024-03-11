@@ -1,10 +1,5 @@
 import Image from "next/image";
 import "./DashboardFront.css"
-
-export const metadata = {
-  title: "WOLFSREX - Dashboard",
-};
-
 export default function DashboardFront() {
 
 

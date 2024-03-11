@@ -3,6 +3,11 @@ import NextAuthProvider from "@/utils/SessionProvider";
 import { getServerSession } from "next-auth";
 import { redirect } from "next/navigation";
 
+export const metadata = {
+  title: "WOLFSREX - Dashboard",
+};
+
+
 export default async function layout({ children }) {
   const session = await getServerSession();
 
